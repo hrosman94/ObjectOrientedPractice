@@ -15,7 +15,7 @@ public class Main {
     "Update method.\n");
     System.out.println("Java passes in a “pointer” to an argument’s address, "+
     "but the\nreceiving function receives a copy, and cannot alter the "+
-    "original\nargument by itself (without a wrapper)\n"); 
+    "original\nargument by itself (without a wrapper).\n"); 
 
     Greeter from_here = new Greeter("my friend");
     main2(from_here);//only works, because main2 is also static. 
@@ -27,7 +27,7 @@ public class Main {
 
     int x = Greeter.s + 1; 
     System.out.println("s is public static int declared within Greeter. x "+
-    "(created in \nmain), is s+1. s equals 3, so x is: " +x); 
+    "(created in \nmain), is s+1. s equals 3, so x is: " +x+"!"); 
     System.out.println("static objects are acted upon by objects or primitive"+
     " types.");
 

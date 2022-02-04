@@ -1,5 +1,6 @@
 public class Polymorphism {//MULTIPLE objects have MULTIPLE of same method//
   public static void poly(){
+    System.out.println("POLYMORPHISM\n");
     Bird a = new Bird(); 
     a.sing(); 
     /*easy! one form, but if there's a class that's related that can use the 

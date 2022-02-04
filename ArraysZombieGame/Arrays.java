@@ -1,6 +1,7 @@
 public class Arrays {
   public static void arrays() {
 
+  System.out.println("ARRAYS\n");
   System.out.println("\n        Array of zombies game!");
 
   Gun [] gun = new Gun[3]; //Gun array called gun will have 3 new Guns
