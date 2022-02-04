@@ -36,7 +36,7 @@ public class Main {
     Polymorphism.poly(); 
   }
   public static void main2(Greeter to_here) { //if this were not static, 
-                                              //couldn't be called from line 15 
+                                              //couldn't be called from line 20 
                                               //in main (which is also static). 
                                               //If the invocation was attached 
                                               //to an object, it could though.
