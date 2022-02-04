@@ -1,43 +1,45 @@
 Encapsulation
+   Encapsulation allows an implementer of a class to switch implementations 
+   without messing with the class users. Forces focus on initial planning and 
+   design. Required for larger programs to switch between implementations. Data 
+   encapsulation provides a way for restricting the range of a program that is 
+   affected by a change to a small subset i.e. methods of a class. 
 
-Encapsulation allows an implementer of a class to switch implementations without 
-messing with the class users. Forces focus on initial planning and design. 
-Required for larger programs to switch between implementations. Data 
-encapsulation provides a way for restricting the range of a program that is 
-affected by a change to a small subset i.e. methods of a class. 
-
-Once that subset is changed no other part of the program will need to worry 
-about it. Encapsulation in Java is a mechanism of wrapping the data (variables) 
-and code acting on the data (methods) together as a single unit. In 
-encapsulation, the variables of a class will be hidden from other classes, and 
-can be accessed only through the methods of their current class. Therefore, it 
-is also known as data hiding.
-https://www.tutorialspoint.com/java/java_encapsulation.htm 
+   Once that subset is changed no other part of the program will need to worry 
+   about it. Encapsulation in Java is a mechanism of wrapping the data (variables) 
+   and code acting on the data (methods) together as a single unit. In 
+   encapsulation, the variables of a class will be hidden from other classes, 
+   and can be accessed only through the methods of their current class. 
+   Therefore, it is also known as data hiding.
+   https://www.tutorialspoint.com/java/java_encapsulation.htm 
 
 Loosely-Coupled
-Classes should try to reduce dependency (Manipulating objects of other classes)
-Dependency-relationships are coupling, essentially hardcoding interactions 
-between classes which makes modification harder further down the line
-Loosely-Coupled classes are those that try to rely less on other classes, 
-ideally unaware that other classes exist and ignorant to other classes changing 
-as the program runs
+   Classes should try to reduce dependency (Manipulating objects of other 
+   classes) Dependency-relationships are coupling, essentially hardcoding 
+   interactions between classes which makes modification harder further down the 
+   line. Loosely-Coupled classes are those that try to rely less on other 
+   classes, ideally unaware that other classes exist and ignorant to other 
+   classes changing as the program runs
 
 Cohesion
-All class operations must logically fit together to support a single coherent 
-purpose. (p. 118)
-Class features should be related to a single idea: mailbox example on page 118. 
+   All class operations must logically fit together to support a single coherent 
+   purpose. (p. 118)
+   Class features should be related to a single idea: mailbox example on page 
+   118. 
+
 Completeness
-A class interface should support all operations that are a part of the 
-abstraction that the class represents. 
+   A class interface should support all operations that are a part of the 
+   abstraction that the class represents. 
 
 Convenience 
-Make common tasks easy. 
-Interfaces should provide convenient ways to accomplish common tasks. 
+   Make common tasks easy. 
+   Interfaces should provide convenient ways to accomplish common tasks. 
 
 Clarity
-Interface of a class should be clear to programmers. 
-Implement operations and interfaces that a clear to someone in how they work 
-(p. 120)
+   Interface of a class should be clear to programmers. 
+   Implement operations and interfaces that a clear to someone in how they work 
+   (p. 120)
+
 Consistency
-Ensure names, parameters, return values and behavior are consistent in 
-operations throughout a class. 
+   Ensure names, parameters, return values and behavior are consistent in 
+   operations throughout a class.
