@@ -1,6 +1,6 @@
 public class Inheritance {//MULTIPLE of the same OBJECT can share the SAME method
   public static void inher(){
-    System.out.println("INHERITANCE\n");
+    System.out.println("\n***INHERITANCE***");
 
     /*Suppose we belong to a gaming company and we need to create 5 types of 
     gaming mice. We need to write the software for the mice.

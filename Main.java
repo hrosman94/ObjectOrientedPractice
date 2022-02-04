@@ -1,5 +1,6 @@
 public class Main {
   public static void main(String[] args) {
+    System.out.println("\n***BASICS***\n");
     Greeter worldGreeter = new Greeter("World");
     String greeting = worldGreeter.sayHello(); //to invoke methods of a created 
     //object's class, use a "." Dots can also invoke methods, but there's some 
