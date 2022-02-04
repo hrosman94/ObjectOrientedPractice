@@ -4,9 +4,9 @@ public class TriesAndCatches {
       System.out.println(x.length()); 
     } catch (NullPointerException e) {
       System.out.println("NullPointerException. Can't get length of null"+
-      " object, so catch succesful");
+      " object, so\ncatch succesful");
     } finally {
-      System.out.println("The 'try catch' is finished.\n");
+      System.out.println("The try/catch is finished.\n");
     }
   }
 }

@@ -11,11 +11,11 @@ public class Main {
 
     //what about updating? 
     worldGreeter.Update("Updated world"); //go to worldGreeter and update method
-    System.out.println(greeting + " still when we get back from the Update"+
-    " method.\n");
+    System.out.println(greeting + " still when we get back from\n    the "+
+    "Update method.\n");
     System.out.println("Java passes in a “pointer” to an argument’s address, "+
-    "but the receiving function receives a copy, and cannot alter the original"+
-    " argument by itself (without a wrapper)\n"); 
+    "but the\nreceiving function receives a copy, and cannot alter the "+
+    "original\nargument by itself (without a wrapper)\n"); 
 
     Greeter from_here = new Greeter("my friend");
     main2(from_here);//only works, because main2 is also static. 
@@ -27,7 +27,7 @@ public class Main {
 
     int x = Greeter.s + 1; 
     System.out.println("s is public static int declared within Greeter. x "+
-    "(created in main), is s+1. s equals 3, so x is: " +x); 
+    "(created in \nmain), is s+1. s equals 3, so x is: " +x); 
     System.out.println("static objects are acted upon by objects or primitive"+
     " types.");
 

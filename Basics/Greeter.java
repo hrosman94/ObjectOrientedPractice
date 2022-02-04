@@ -9,8 +9,9 @@ public class Greeter {
                                   //class
   }
   public String Update (String anotherName) { 
-    System.out.print("Can update name HERE, in THIS scope, but can't return the update. ");
-    System.out.print (anotherName);
+    System.out.print("Can update name HERE, in THIS scope, but can't return "+
+    "the update. ");
+    System.out.print ("\n" + anotherName);
     System.out.print(" passed as name, but watch:\n    ");
     name = anotherName; 
     System.out.print(name + " buuuut "); 
