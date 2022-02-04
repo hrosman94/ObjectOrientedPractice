@@ -6,7 +6,7 @@ and includes a short list of some best practices as well as the primitive
 types we learned.   
 
 To fully understand what is happening, it is recommended that the user 
-first compiles and then follows along--starting from Main.java--with the 
+first compiles and then follows along (starting from Main.java) with the 
 comments/code line-by-line as they look at the output. 
 
 A user can run the program with the following Linux command:
