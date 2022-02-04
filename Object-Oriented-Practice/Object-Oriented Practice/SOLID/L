@@ -1,0 +1,28 @@
+/*Liskov Substitution Principle
+
+Replaceable w/ subtypes w/o altering correctness
+If you see class throwing error because it doesn't have attributes shared with 
+its relative or super class, that's breaking the Liskov Substitution Principle
+DO NOT do the following. 
+
+Interface IBird{
+  int getEggCount();
+  void Fly();
+}
+class Duck implements IBird {
+  int GetEggCount();
+  void Fly();
+}
+
+class Ostridge implements IBird{
+  int getEggCount() {return 3;}
+  void Fly() { throw new Exception("Ostridges can't fly");}
+}
+
+static void Flap (IBird b) { b.Fly();}
+static void Main9string[] args){
+  Flap(new Duck());
+}
+Could instead implement an interface for flightles birds, and birds that can fly 
+instead of throwing exceptions for everything that doesn't apply.
+*/

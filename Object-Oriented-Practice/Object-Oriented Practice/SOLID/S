@@ -1,0 +1,14 @@
+/*Single responsibility
+
+DO NOT do the following. Too many tasks, tightly coupled. One task per class!
+public class Employee {
+  public int calcPay(){
+
+  }
+  public int reportHours(){
+
+  }
+  public String writeEmpInfo(){
+
+  } 
+}*/

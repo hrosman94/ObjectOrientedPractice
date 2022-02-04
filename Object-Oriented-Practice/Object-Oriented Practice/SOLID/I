@@ -1,0 +1,42 @@
+/*Interface Segregation Principle
+
+Many client=specific interfaces over one general purpose one. This is meant to 
+ensure that implementing classes only need ot be concerned about methods that 
+are of interest to them.
+
+If we have a client zookeeper, he would likely feed and wash the bear... but 
+he'd be crazy to try and feed it. So zookeeper doesn't implement the petBear 
+method. And as you now know, the code implementing the interface HAS to use all 
+the methods! So the following is bad. DON'T DO THIS:
+
+public interface BearHandler{
+  public void feedBear(){
+    ...
+  }
+  public void washBear(){
+    ...
+  }
+  public void petBear(){
+    ...
+  }
+} 
+
+Instead, do this!
+
+public interface WashBear{
+    public void (Bear b){
+      ...
+    }
+}
+
+public interface FeedBear{
+    public void (Bear b){
+      ...      
+    }
+}
+
+public interface PetBear{
+    public void (Bear b){
+      ...
+    }
+}*/

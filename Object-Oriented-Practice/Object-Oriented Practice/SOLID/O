@@ -1,0 +1,30 @@
+/*Open/Closed principle
+
+Class should be open for extension, closed for modification.
+DO NOT do the following. If your class has an if cluase checking for a condition 
+of state, you're breaking this principle.  
+
+class Animal{
+  private String Type;
+  String Says(){
+    if(Type.Equals("dog")) return "woof";
+    if(Type.Equals("cat")) return "meow";
+    return "";
+  }
+}
+
+Instead, make a base class and then make classes that have their unique 
+implementations EXTEND the base class.
+
+class Animal{
+  public void says(String speak)
+  {
+    System.out.println(speak)
+  }
+}
+class Dog extends Animal{
+  String speak = "woof"; 
+}
+class Cat extends Animal{
+  String speak = "meow"; 
+}*/

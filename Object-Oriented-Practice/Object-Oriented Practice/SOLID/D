@@ -1,0 +1,47 @@
+/*Dependency Inversion Principle
+
+Depend on abstractions
+If you see a class calling the constructor of an object internally vs using some 
+kind of intermediary entity, or if you see a concrete object with a constructor 
+calling the new keyword in there somewhere, these violate the inversion 
+principle.
+
+For example, DO NOT do the following:
+
+public class BadExampleDIP {
+  private ArrayList list;//since it must be an Arraylist, this is tighyly 
+                         //coupled.
+
+  public BadExampleDIP(ArrayList list){
+    this.list = list;
+  }
+  public static void main(Sring[] args){
+    ArrayList<String> example = new ArrayList<string>();
+    BadExampleDIP test = new BadExampleDIP(example);
+
+    //THIS WONT WORK, since we already committed to only being able to have 
+    //ArrayLists.
+    LinkedList<String> example2 = new LinkedList<String>();
+
+    BadExampleDIP test2 = new BadExampleDIP(example2);
+  }
+}
+
+Instead, do this!
+
+public class GoodExampleDIP {
+  private List list;//no longer tightly coupled
+
+  public GoodExampleDIP(ArrayList list){
+    this.list = list;
+  }
+  public static void main(Sring[] args){
+    ArrayList<String> example = new ArrayList<string>();
+    GoodExampleDIP test = new GoodExampleDIP(example);
+
+    //NOW this can work.
+    LinkedList<String> example2 = new LinkedList<String>();
+
+    GoodExampleDIP test2 = new GoodExampleDIP(example2);
+  }
+}*/
