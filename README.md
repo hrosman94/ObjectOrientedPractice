@@ -1,4 +1,4 @@
-lThis is a little project that I did during my semester in object-oriented 
+This is a little project that I did during my semester in object-oriented 
 design to showcase almost everything we learned in the class. It shows 
 the syntax and basics of Java, shows how to utilize tries/catches, 
 inheritance/polymorphism, the SOLID principles, how to use interfaces, 
